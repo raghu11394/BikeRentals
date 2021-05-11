@@ -18,7 +18,8 @@ public class AppTest {
 
     @Test 
     public void testBreadth() { 
-        Assert.assertEquals("1","1");
+    	// modifying the test to deliberately fail it
+        Assert.assertEquals("1","2");
  
     }
 }
