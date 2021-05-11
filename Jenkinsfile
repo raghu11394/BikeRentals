@@ -1,4 +1,4 @@
-currentBuild.displayName = "BikeRental"+"#${BUILD_NUMBER}"
+//currentBuild.displayName = "BikeRental"+"#${BUILD_NUMBER}"
 
 pipeline {
    agent any
