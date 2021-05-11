@@ -1,3 +1,5 @@
+currentBuild.displayName = "BikeRental"+"#${BUILD_NUMBER}, branch ${BRANCH}"
+
 pipeline {
    agent any
    tools {
