@@ -7,7 +7,6 @@ pipeline {
    }
    stages {
        stage("Build") {
-                ignoreErrors : false
                 steps {
                     echo "Building" 
                     sh 'mvn -X clean install -DskipTests'
