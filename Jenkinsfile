@@ -16,6 +16,17 @@ pipeline {
            steps {
                echo "Testing"
                sh 'mvn test'
+               snDevOpsArtifact(artifactsPayload:"""
+               {"artifacts": 
+                  [
+                     {
+                        "name": "TestArtifact",
+                        "version":"0.${env.BUILD_NUMBER}.0",
+                        "semanticVersion": "0.${env.BUILD_NUMBER}.0",
+                        "repositoryName": "bm-artifacts-repo"
+                       }
+                    ]
+                 }""")
            }
           post {
                 always {
