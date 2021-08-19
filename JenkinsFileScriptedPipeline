@@ -80,8 +80,9 @@ pipeline {
         stage("deploy") {
              
                     steps{
-                        
 			echo "deploy in prod"
+			sleep 5
+			snDevOpsChange()
                    }
                 
         }
